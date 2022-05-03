@@ -1,0 +1,43 @@
+h1 {
+    color: darkred;
+    font-size: 24px;
+    text-align: center;
+    line-height: 140%;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 20px;
+}
+h4, h5, h6 {
+    font-size: 18px;
+}
+
+h2, h3, h4, h5, h6 {
+    line-height: 140%;
+
+}
+
+body, p {
+    font-family: "Arial", SansSerif, serif;
+    font-size: 16px;
+    line-height: 120%;
+    color: #333333;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    color: #800080; /* Колір відвіданого посилання */
+}
+a:hover {
+    color: #008BFF; /* Колір посилання при наведенні на нього курсора миші */
+    text-decoration: none; /* Прибираємо підкреслення */
+}
+
+nav {
+    text-decoration: none;
+}
