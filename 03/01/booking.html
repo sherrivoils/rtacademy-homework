@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Назва сторінки</title>
-
 </head>
 <body>
 <header>
@@ -19,36 +18,36 @@
 </nav>
 <main>
     <p>* Призвище</p>
-    <input type="text" value="Введіть призвище">
+    <input type="text" id="userlastname" placeholder="Введіть призвище" minlength="2" required maxlength="64">
     <p>* Ім'я</p>
-    <input type="text" value="Введіть ім'я">
+    <input type="text" id="username" placeholder="Введіть ім'я" minlength="2" required maxlength="64">
     <p>* Email</p>
-    <input type="email" value="Введіть email">
+    <input type="email" id="email" placeholder="Введіть email" minlength="6" required maxlength="255">
     <p>* Телефон</p>
-    <input type="tel" value="+380931234567">
+    <input type="tel" id="tel" placeholder="+380931234567" required maxlength="13">
     <p>* Профіль instagram</p>
-    <input type="url" value="https://instagram.com">
+    <input type="url" id="url" placeholder="https://instagram.com" minlength="23" maxlength="255">
     <p>* Зал</p>
     <select>
-        <option value="Оберіть зал" selected>Оберіть зал</option>
-        <option value="Зал 1" >Зал 1</option>
-        <option value="Зал 2">Зал 2</option>
-        <option value="Зал 3">Зал 3</option>
+        <option value="Оберіть зал">Оберіть зал для релаксації</option>
+        <option value="Зал 1" selected>Зал 1. Жовтий вимір</option>
+        <option value="Зал 2">Зал 2. Зелений вимір</option>
+        <option value="Зал 3">Зал 3. Веселковий зал</option>
     </select>
     <p>* Дата і час початку:</p>
-    <input type="datetime-local" name="datetimelocalstart" id="datetimelocalstart">
+    <input type="datetime-local" name="datetimestart" id="datetimestart" required min="2022-05-04T00:00" max="2023-01-01T00:00">
     <p>* Дата і час кінця:</p>
-    <input type="datetime-local" name="datetimelocalfinish" id="datetimelocalfinish">
+    <input type="datetime-local" name="datetimefinish" id="datetimefinish" required min="2022-05-04T00:00" max="2023-01-01T00:00">
     <p>* Кількість людей в залі:</p>
-    <input type="number" min="1" max="10" step="1">
+    <input type="number" placeholder="2" min="1" max="10" step="1">
     <p>* Колір фону:</p>
     <input type="color">
     <p>* Коментар:</p>
-    <textarea rows="5" cols="10">
-    Введіть свій коментар, або побажання.
+    <textarea rows="7" cols="35">
+    Введить свій коментар або побажання. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ex aliquet, volutpat tortor in, volutpat ligula.
     </textarea>
     <br>
-    <input type="checkbox" value="carrots" checked> Я погоджуюсь з правилами фотостудії
+    <input type="checkbox" value="carrots" checked> Я погоджуюсь з правилами стоунстудії
     <br>
     <br>
 
